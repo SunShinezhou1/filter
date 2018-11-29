@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:id="@+id/zhu"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/s" />
+        <ImageView
+            android:id="@+id/fh"
+            android:visibility="gone"
+            android:src="@mipmap/fh"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+    </FrameLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/sd"
+            android:text="色调"
+            android:background="@drawable/button"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seek"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_width="300dp"
+            android:layout_height="20dp" />
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seek2"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/seek"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_width="300dp"
+            android:layout_height="20dp" />
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seek3"
+            android:layout_below="@+id/seek2"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_width="300dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lj"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="自然"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:src="@drawable/tu"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="电影"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/tow"
+                android:layout_width="wrap_content"
+                android:src="@drawable/two"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="菲林日记"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:src="@drawable/three"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="旅程"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/fro"
+                android:layout_width="wrap_content"
+                android:src="@drawable/fro"
+                android:layout_height="match_parent" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
